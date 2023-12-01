@@ -3,21 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Page</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Day 5 CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+      }
+      .square {
+        width: 200px;
+        height: 200px;
+        background: green;
+        /* auto, visible, hidden, scroll */
+        overflow-y: scroll;
+      }
+      .card {
+        width: 10rem;
+        height: 10rem;
+        background: #ffffff;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+      }
+      i {
+        font-size: 2rem;
+        color: lightseagreen;
+      }
+
+      .flex-container {
+        display: flex;
+      }
+
+      @media screen and (min-width: 0px) and (max-width: 480px) {
+        .square {
+          background: red;
+        }
+      }
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        .square {
+          background: yellow;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div class="login-page-container">
-      <div class="login-form-container">
-        <div class="input-container">
-          <input type="text" placeholder="Enter email address" />
-        </div>
-        <div class="input-container">
-          <input type="password" placeholder="Enter password" />
-        </div>
-        <button class="button">Login</button>
+    <h1>Day 4 CSS</h1>
+    <section>
+      <h3>Overflow</h3>
+      <div class="square">
+        This is square, green in color, 100px width, and 100px height, and when
+        i add data inside the div we see overflow
       </div>
-    </div>
-    <script src="./script.js"></script>
+    </section>
+    <section>
+      <h3>Dropshadow</h3>
+      <div class="card"></div>
+    </section>
+    <section>
+      <h3>Icons</h3>
+      <i class="bx bx-user"></i>
+      <i class="bx bxs-user"></i>
+      <i class="bx bxl-facebook-square"></i>
+      <i>Hey im a <span style="font-style: normal">normal text</span></i>
+    </section>
+    <section>
+      <h3>Media Queries</h3>
+      <div class="flex-container">
+        <div class="square">1</div>
+        <div class="square">2</div>
+        <div class="square">3</div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </body>
 </html>

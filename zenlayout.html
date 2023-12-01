@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zenclass Layout</title>
+    <style>
+      .zenlayout {
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+          "sidebar navbar navbar navbar navbar"
+          "sidebar content-area content-area content-area content-area"
+          "sidebar content-area content-area content-area content-area"
+          "sidebar content-area content-area content-area content-area"
+          "sidebar content-area content-area content-area content-area"
+          "sidebar content-area content-area content-area content-area"
+          "sidebar content-area content-area content-area content-area";
+      }
+      .sidebar {
+        grid-area: sidebar;
+        background-color: blue;
+      }
+      .navbar {
+        grid-area: navbar;
+        background-color: bisque;
+      }
+      .content-area {
+        grid-area: content-area;
+        display: flex;
+        background-color: aquamarine;
+      }
+      .class-details {
+        width: 50%;
+        height: 100%;
+        background: yellow;
+      }
+      .session-roadmap {
+        width: 50%;
+        height: 100%;
+        background: red;
+      }
+      @media screen and (min-width: 0px) and (max-width: 480px) {
+        .content-area {
+          grid-area: content-area;
+          display: flex;
+          flex-direction: column;
+          background-color: aquamarine;
+        }
+        .class-details {
+          width: 100%;
+        }
+        .session-roadmap {
+          width: 100%;
+        }
+        .sidebar {
+          display: none;
+          visibility: hidden;
+        }
+        .zenlayout {
+          height: 100vh;
+          display: grid;
+          grid-template-areas:
+            "navbar navbar navbar navbar"
+            "content-area content-area content-area content-area"
+            "content-area content-area content-area content-area"
+            "content-area content-area content-area content-area"
+            "content-area content-area content-area content-area"
+            "content-area content-area content-area content-area"
+            "content-area content-area content-area content-area";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="zenlayout">
+      <div class="sidebar"></div>
+      <div class="navbar"></div>
+      <div class="content-area">
+        <div class="class-details">Class Details</div>
+        <div class="session-roadmap">Session Roadmap</div>
+      </div>
+    </section>
+  </body>
+</html>

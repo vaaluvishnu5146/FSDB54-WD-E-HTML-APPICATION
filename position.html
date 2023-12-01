@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position properties</title>
+    <style>
+      html,
+      body {
+        padding: 0px;
+        margin: 0px;
+      }
+      .navbar {
+        width: 100%;
+        height: 100px;
+        background: black;
+        position: sticky;
+        top: 0;
+      }
+      .content-area {
+        position: relative;
+        width: 1000px;
+        height: 100vh;
+        background: linear-gradient(30deg, #f69d3c, #3f87a6);
+      }
+      .square {
+        width: 100px;
+        height: inherit;
+        background: lightgreen;
+        position: absolute;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="content-area"></div> -->
+    <!-- <div class="navbar"></div> -->
+    <div class="content-area">
+      <div class="square"></div>
+    </div>
+  </body>
+</html>
