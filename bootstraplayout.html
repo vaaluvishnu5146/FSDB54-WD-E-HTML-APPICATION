@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Ecommerce Layout</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      .branding {
+        background-color: pink;
+        height: 50px;
+      }
+
+      .navigation {
+        background-color: navy;
+        height: 50px;
+      }
+
+      .box-sizing-border-box {
+        box-sizing: border-box;
+      }
+
+      .product-card {
+        height: 250px;
+        background: navy;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="row mb-5">
+        <div class="box-sizing-border-box col-lg-3 col-md-2 col-sm-12 branding">
+          dasdasd
+        </div>
+        <div
+          class="box-sizing-border-box col-lg-9 col-md-10 d-none d-sm-block navigation"
+        >
+          dasasd
+        </div>
+      </div>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://assets.justinmind.com/wp-content/uploads/2019/01/responsive-mockup-templates-Justinmind.png"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://cdn.joomdev.com/wp-content/uploads/2021/11/b2ap3_large_benefits-of-mokcup-ver-2.png"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="row d-flex">
+        <div class="col-lg-3 column-gap-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="product-card"></div>
+        </div>
+        <div class="col-lg-3 column-gap-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="product-card"></div>
+        </div>
+        <div class="col-lg-3 column-gap-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="product-card"></div>
+        </div>
+        <div class="col-lg-3 column-gap-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="product-card"></div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
