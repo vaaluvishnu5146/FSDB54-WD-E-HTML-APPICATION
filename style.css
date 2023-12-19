@@ -3,6 +3,18 @@ body,
 input,
 button {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
 }
 
 .button {
@@ -26,19 +38,28 @@ button {
   background-color: #033a7d;
 }
 
-.login-page-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+.badge {
+  width: auto;
+  height: auto;
+  padding: 2px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 120px;
 }
 
-.login-form-container {
-  width: 300px;
+.badge-success {
+  background: lightgreen;
+}
+
+.badge-warning {
+  background: lightsalmon;
 }
 
 .input-container {
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
 }
 
 input {
@@ -52,4 +73,60 @@ input {
 
 input:focus-visible {
   outline: 2px solid #0e72ed;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.login-page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.create-todo-sidebar {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-listing-container {
+  width: 70%;
+  height: 100%;
+  background: #0956b5;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  row-gap: 10px;
+  overflow: scroll;
+}
+
+.login-form-container {
+  width: 300px;
+}
+
+.card {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  > .card-left-area {
+    > h3 {
+      margin-bottom: 10px;
+    }
+  }
+
+  > .card-right-area {
+  }
 }

@@ -3,20 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Page</title>
+    <title>Todo Crud</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="login-page-container">
-      <div class="login-form-container">
-        <div class="input-container">
-          <input type="text" placeholder="Enter email address" />
+      <div class="create-todo-sidebar">
+        <div class="login-form-container">
+          <div class="input-container">
+            <input type="text" placeholder="Enter User Id" id="userId" />
+          </div>
+          <div class="input-container">
+            <input type="text" placeholder="Enter Title" id="title" />
+          </div>
+          <div class="input-container">
+            <label for="completed">Completed?</label>
+            <input type="checkbox" id="completed" />
+          </div>
+          <button class="button" id="saveTodo">Save</button>
         </div>
-        <div class="input-container">
-          <input type="password" placeholder="Enter password" />
-        </div>
-        <button class="button">Login</button>
       </div>
+      <div id="todo-listing-container" class="todo-listing-container"></div>
     </div>
     <script src="./script.js"></script>
   </body>
