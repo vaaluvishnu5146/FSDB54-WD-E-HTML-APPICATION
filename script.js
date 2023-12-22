@@ -13,9 +13,13 @@ const textInputs = [userId, title];
  * @returns []
  */
 async function fetchTodos() {
-  const bufferResponse = await fetch("http://localhost:5000/api/todo/");
-  const payload = await bufferResponse.json();
-  return payload.result;
+  try {
+    const bufferResponse = await fetch("http://localhost:5000/api/todo/");
+    const payload = await bufferResponse.json();
+    return payload.result;
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 /**
